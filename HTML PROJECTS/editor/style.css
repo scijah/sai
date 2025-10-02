@@ -1,0 +1,193 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0%;
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+    justify-self: center;
+    margin: 10px 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(117, 70, 78);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: larger;
+}
+
+/* Navigation Responsive */
+@media (max-width: 768px) {
+    nav ul{
+    flex-direction: column;
+    }
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+}
+
+/* Header background */
+.pink {
+    background-image: url(https://media1.tenor.com/m/W-btfJNo0ewAAAAd/blossom-pink.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 8%;
+    color: rgb(174, 105, 105);
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    position: center;
+}
+
+/* Sections full screen */
+section {
+    min-height: 100vh; /* full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+/* Home Section */
+.Home-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+
+.header {
+    display: flex; justify-content: space-between; 
+    align-items: center; 
+    padding: 5vh 10%; 
+    gap: 20px;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #46153d;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: justify;
+    line-height: 1.2;
+    margin-bottom: -5%;
+}
+
+.header .cat-gif {
+    width: min(90%, 400px);
+    height: auto;
+    border-radius: 15px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pink-btn {
+    background-color: rgb(233, 168, 195);
+    color: rgb(130, 70, 80);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.pink-btn:hover {
+    background-color: rgb(117, 70, 78);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.About-section .content {
+    text-align: center;
+    max-width: 800px;
+    background-color: #f8deeb;
+}
+
+.About-section h2 {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #46153d;
+    margin-bottom: 20px;
+}
+
+.About-section p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: rgb(117, 70, 78);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(233, 168, 195);    
+}
+
+/* Quotes Section */
+.Quotes-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: #f8deeb;
+    color: rgb(117, 70, 78);
+}
+
+.Quotes-section .content {
+text-align: center;
+max-width: 800px;
+}
+
+.Quotes-section h2 {
+font-size: 2.5em;
+font-weight: 900;
+color: #46153d;
+margin-bottom: 20px;
+}
+
+.Quotes-section p {
+font-size: 1.2rem;
+font-weight: 600;
+line-height: 1.6;
+color: rgb(117, 70, 78);
+padding: 20px;
+margin: 20px auto;
+border-radius: 20px;
+background-color: rgb(233, 168, 195);
+}
+
+/* Footer */
+.created-section h3 {
+font-weight: 800;
+color: #46153d;
+text-align: center;
+}
